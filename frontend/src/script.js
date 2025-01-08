@@ -1,5 +1,4 @@
-const API_HOST = window.API_HOST || 'localhost';
-const API_URL = `http://${API_HOST}:8081/api`;
+const API_URL = `http://localhost:8081/api`;
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#text-form');

@@ -7,8 +7,6 @@ services:
     container_name: frontend-basic
     ports:
       - "8080:80"
-    environment:
-      - API_HOST=${API_HOST}
     depends_on:
       - backend
     networks:
