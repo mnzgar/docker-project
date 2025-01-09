@@ -1,6 +1,9 @@
 # Proyecto Docker 🐳🐳🐳
 
 1. Ejecutaremos nuestra aplicación en un solo servidor con docker (con tres contenedores en la misma máquina)
+
+http://10.6.130.49:8080/
+
 ```zsh
 # Database
 $ docker volume create db_data
