@@ -7,8 +7,6 @@ services:
     container_name: frontend-basic
     ports:
       - "8080:80"
-    depends_on:
-      - backend
     networks:
       - app-network
   
@@ -18,8 +16,8 @@ services:
     container_name: backend-node
     ports:
       - "8081:5000"
-    depends_on:
-      - db
+    environment:
+      - DB_HOST=10.6.131.194
     networks:
       - app-network
   

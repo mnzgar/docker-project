@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const pool = new Pool({
-  host: 'db',
+  host: process.env.DB_HOST,
   user: 'postgres',
   password: 'password',
   database: 'textsdb',
