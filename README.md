@@ -1,6 +1,9 @@
 # Proyecto Docker 🐳🐳🐳
 
 1. Ejecutaremos nuestra aplicación en un solo servidor con docker (con tres contenedores en la misma máquina)
+
+http://10.6.130.49:8080/
+
 ```zsh
 # Database
 $ docker volume create db_data
@@ -31,11 +34,23 @@ $ docker run -d \
 ```
 
 2. Ejecutaremos nuestra aplicación en un solo servidor usando docker compose (con tres contenedores en la misma máquina)
+
+http://10.6.129.26:8080/
+
 ```zsh
 # Para ejecutar:
 $ docker-compose up --build -d
 ```
 
 3. Ejecutaremos nuestra aplicación ejecutando cada contenedor en una máquina distinta)
+
+http://10.6.131.84:8080/
+
+```zsh
+# Ejecutar en las diferentes máquinas
+$ docker-compose up -d db
+$ docker-compose up -d backend
+$ docker-compose up -d frontend
+```
 
 4. Desplegaremos con Ansible cada contenedor en una máquina distinta
