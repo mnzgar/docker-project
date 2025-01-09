@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8081/api';
+const API_URL = 'http://10.6.129.26:8081/api';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#text-form');
